@@ -189,13 +189,15 @@ public class EarthquakeActivity extends AppCompatActivity
         // Loader reset, so we can clear out our existing data.
         mAdapter.clear();
     }
-
+    /**创造actionbar的菜单*/
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
+        //返回false则不显示
         return true;
     }
 
+    /**actionbar菜单的点击事件*/
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();

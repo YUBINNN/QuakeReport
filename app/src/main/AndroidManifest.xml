@@ -21,6 +21,7 @@
         <activity
             android:name=".SettingsActivity"
             android:label="@string/settings_title">
+            <!--关联上级活动，显示返回箭头按钮-->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.android.quakereport.EarthquakeActivity"/>
